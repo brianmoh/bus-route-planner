@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Bus Route Planner</title>
-    <base href="/">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<head>
+  <title>Bus Route Planner</title>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
 
-    <!-- Polyfill(s) for older browsers -->
-    <script src="js/lib/shim.min.js"></script>
+  <!-- Polyfill(s) for older browsers -->
+  <script src="js/lib/shim.min.js"></script>
 
-    <script src="js/lib/zone.js"></script>
-    <script src="js/lib/system.src.js"></script>
+  <script src="js/lib/zone.js"></script>
+  <script src="js/lib/system.src.js"></script>
 
-    <script src="js/systemjs.config.js"></script>
-    <script>
-      System.import('app').catch(function(err){ console.error(err); });
-    </script>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-  </head>
-
-  <body>
-    <brp-main-app></brp-main-app>
-  </body>
+  <script src="js/systemjs.config.js"></script>
+  <script src="js/lib/leaflet.js"></script>
+  <script>
+    System.import('app').catch(function (err) { console.error(err); });
+  </script>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <brp-main-app></brp-main-app>
+</body>
 </html>

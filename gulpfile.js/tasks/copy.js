@@ -38,6 +38,9 @@ var copyTask = function () {
         }, {
             src: 'node_modules/rxjs/**/*',
             dest: 'js/lib/rxjs'
+        }, {
+            src: 'node_modules/leaflet/dist/leaflet.js',
+            dest: 'js/lib'
         }
     ];
     var mergedStreams = merge();

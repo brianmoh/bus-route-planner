@@ -20,7 +20,7 @@
       '@angular/forms': 'js/lib/@angular/forms/bundles/forms.umd.js',
 
       // other libraries
-      'rxjs':                      'js/lib/rxjs'
+      'rxjs': 'js/lib/rxjs'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
