@@ -19,6 +19,11 @@ var copyTask = function () {
             src: 'src/img/**/*',
             dest: 'img'
         },
+        // JSON
+        {
+            src: 'src/json/**/*',
+            dest: 'json'
+        },
         // Libs
         {
             src: 'node_modules/core-js/client/shim.min.js',
@@ -39,8 +44,8 @@ var copyTask = function () {
             src: 'node_modules/rxjs/**/*',
             dest: 'js/lib/rxjs'
         }, {
-            src: 'node_modules/leaflet/dist/leaflet.js',
-            dest: 'js/lib'
+            src: 'node_modules/leaflet/dist/**/*',
+            dest: 'js/lib/leaflet'
         }
     ];
     var mergedStreams = merge();

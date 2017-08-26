@@ -19,12 +19,11 @@ footer {
   width:100%;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
+#map {
+  height: 85vh;
+  width: 80vw;
 }
 
-#map {
-  height: 600px;
-  width: 700px;
+.app-body {
+  display: flex;
 }

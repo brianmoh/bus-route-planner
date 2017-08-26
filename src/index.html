@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Bus Route Planner</title>
   <base href="/">
@@ -14,16 +15,20 @@
 
   <script src="js/lib/zone.js"></script>
   <script src="js/lib/system.src.js"></script>
-
+  <script src="js/lib/leaflet/leaflet.js"></script>
   <script src="js/systemjs.config.js"></script>
-  <script src="js/lib/leaflet.js"></script>
+  <script>
+    L.Icon.Default.imagePath = 'js/lib/leaflet/images/';
+  </script>
   <script>
     System.import('app').catch(function (err) { console.error(err); });
   </script>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
   <brp-main-app></brp-main-app>
 </body>
+
 </html>
