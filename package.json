@@ -1,0 +1,52 @@
+{
+  "name": "gfl-hw",
+  "description": "Description here",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -p src/ -w",
+    "serve": "lite-server -c=bs-config.json",
+    "prestart": "npm run build",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
+    "pretest": "npm run build",
+    "pretest:once": "npm run build",
+    "lint": "tslint ./src/**/*.ts -t verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "~4.3.4",
+    "@angular/compiler": "~4.3.4",
+    "@angular/core": "~4.3.4",
+    "@angular/forms": "~4.3.4",
+    "@angular/http": "~4.3.4",
+    "@angular/platform-browser": "~4.3.4",
+    "@angular/platform-browser-dynamic": "~4.3.4",
+    "@angular/router": "~4.3.4",
+    "angular-in-memory-web-api": "~0.3.0",
+    "systemjs": "0.19.40",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.1",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@types/jasmine": "2.5.36",
+    "@types/node": "^6.0.46",
+    "browser-sync": "^2.18.13",
+    "canonical-path": "0.0.2",
+    "concurrently": "^3.2.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.4.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-tslint": "*",
+    "gulp-typescript": "^3.2.1",
+    "lite-server": "^2.2.2",
+    "lodash": "^4.16.4",
+    "rimraf": "^2.5.4",
+    "tslint": "*",
+    "typescript": "~2.1.0"
+  },
+  "repository": {}
+}

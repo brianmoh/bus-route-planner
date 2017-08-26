@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GFL Homework</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="js/lib/shim.min.js"></script>
+
+    <script src="js/lib/zone.js"></script>
+    <script src="js/lib/system.src.js"></script>
+
+    <script src="js/systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <my-app>Loading AppComponent content here ...</my-app>
+  </body>
+</html>
