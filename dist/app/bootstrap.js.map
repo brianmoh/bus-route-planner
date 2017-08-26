@@ -1,1 +1,0 @@
-{"version":3,"sources":["app/bootstrap.ts"],"names":[],"mappings":";AAAA,8EAA2E;AAE3E,kDAA+C;AAE/C,iDAAsB,EAAE,CAAC,eAAe,CAAC,uBAAS,CAAC,CAAC","file":"bootstrap.js","sourcesContent":["import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';\r\n\r\nimport { AppModule } from './main/main-module';\r\n\r\nplatformBrowserDynamic().bootstrapModule(AppModule);\r\n"]}
