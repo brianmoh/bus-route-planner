@@ -1,3 +1,11 @@
+@media only screen and (max-device-width: 480px) {
+  brp-main-app {
+    .footer-container {
+      height: 100%;
+    }
+  }
+}
+
 body {
   margin: 0px;
 }
@@ -17,17 +25,16 @@ body {
 }
 
 .footer-container {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  font-size: 125%;
+  display: flex;
   height: calc(15vh - 99px);
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {
-  position: absolute;
-  bottom: 5px;
-  right: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 125%;
 }
 
 .footer-border {
@@ -46,7 +53,52 @@ body {
 }
 
 .toolbar {
+  display: flex;
   width: calc(20vw - 8px);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.toolbar-item {
+  margin: 12px;
+  width: 100%;
+}
+
+.legend-item {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.legend-icon {
+  height: 80px;
+  width: 80px;
+}
+
+.legend-item-text {
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 150%;
+}
+
+.statistic-item {
+  padding: 8px;
+}
+
+.reset-button {
+  height: 50px;
+  background-color: white; /* Green */
+  border-color: black;
+  color: black;
+  padding: 15px 32px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button-bar {
+  align-self: flex-end;
+  margin-bottom: 12px;
 }
 
 .app-body {

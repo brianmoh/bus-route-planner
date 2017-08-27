@@ -4,6 +4,39 @@
 <div class="map-toolbar-container">
     <div id="map"></div>
     <div class="toolbar">
-        <button (click)="resetBusStopMarkers()">Reset Bus Stop Markers</button>
+        <div class="toolbar-item">
+            <fieldset>
+                <legend>Legend</legend>
+                <div class="legend-item">
+                    <img class="legend-icon" src="../../img/bus-stop-icon.png">
+                    <span class="legend-item-text">Bus Stop</span>
+                </div>
+                <div class="legend-item">
+                    <img class="legend-icon" src="../../img/rider-icon.png">
+                    <span class="legend-item-text">Rider</span>
+                </div>
+                <div class="legend-item">
+                    <img class="legend-icon" src="../../img/poi-icon.png">
+                    <span class="legend-item-text">POI</span>
+                </div>
+            </fieldset>
+        </div>
+        <div class="toolbar-item">
+            <fieldset>
+                <legend>Rider Statistics</legend>
+                <div class="statistic-item">
+                    <span class="legend-item-text">Riders: {{riders.length}}</span>
+                </div>
+                <div class="statistic-item">
+                    <span class="legend-item-text">Average Rider Age: {{getAverageRiderAge()}}</span>
+                </div>
+                <div class="statistic-item">
+                    <span class="legend-item-text">Average Rider Income: ${{getAverageRiderIncome()}}</span>
+                </div>
+            </fieldset>
+        </div>
+        <div class="button-bar">
+            <button class="reset-button" (click)="resetBusStopMarkers()">Reset Bus Stop Markers</button>
+        </div>
     </div>
 </div>
