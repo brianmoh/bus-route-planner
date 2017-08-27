@@ -1,4 +1,8 @@
-header {
+body {
+  margin: 0px;
+}
+
+.header {
   font-family: 'Roboto', sans-serif;
   font-size: 150%;
   h1 {
@@ -6,24 +10,76 @@ header {
   }
 }
 
-footer {
+.header-border {
+  height: 15px;
+  width: 100%;
+  background: linear-gradient(#D7D7D7, white);
+}
+
+.footer-container {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
   font-size: 125%;
-  bottom : 10px;  
-  height : 40px;  
-  margin-top : 40px;  
-  text-align: center;  
-  vertical-align: middle; 
-  position:fixed;
-  width:100%;
+  height: calc(15vh - 99px);
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 5px;
+  right: 50%;
+}
+
+.footer-border {
+  height: 12px;
+  width: 100%;
+  background: linear-gradient(to top, #EAEAEA, white);
+}
+
+.map-toolbar-container {
+  display: flex;
 }
 
 #map {
-  height: 85vh;
+  height: calc(85vh - 50px);
   width: 80vw;
+}
+
+.toolbar {
+  width: calc(20vw - 8px);
 }
 
 .app-body {
   display: flex;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 2;
+}
+
+.loader {
+  position: fixed;
+  top: calc(50vh - 76px);
+  right: calc(50vw - 76px);
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-right: 16px solid black;
+  border-bottom: 16px solid red;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

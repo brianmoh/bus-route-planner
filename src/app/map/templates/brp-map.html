@@ -1,3 +1,9 @@
-<div id="map">
-    
+<div *ngIf="isLoading" class="overlay">
+    <div class="loader"></div>
+</div>
+<div class="map-toolbar-container">
+    <div id="map"></div>
+    <div class="toolbar">
+        <button (click)="resetBusStopMarkers()">Reset Bus Stop Markers</button>
+    </div>
 </div>
