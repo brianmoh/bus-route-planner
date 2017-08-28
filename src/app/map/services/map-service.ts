@@ -16,8 +16,7 @@ export class MapService {
     }
 
     getRideLocations(): Observable<Array<POI>> {
-        /*'https://gfl-busdata.herokuapp.com/paloalto.json?api_key=cd81c144951d82b656ae9b8e78957c'*/
-        return this.http.get('../../json/ride-locations.json')
+        return this.http.get('https://gfl-busdata.herokuapp.com/paloalto.json?api_key=cd81c144951d82b656ae9b8e78957c')
             .map((res: Response) => {
                 return res.json().items;
             });
