@@ -34,7 +34,7 @@ body {
 .footer {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
-  font-size: 125%;
+  font-size: 1em;
 }
 
 .footer-border {
@@ -88,10 +88,10 @@ body {
 
 .reset-button {
   height: 50px;
+  width: 200px;
   background-color: white; /* Green */
   border-color: black;
   color: black;
-  padding: 15px 32px;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
 }
