@@ -198,6 +198,7 @@ export class BrpMap {
     for (let marker of this.busStopMarkers) {
       this.map.removeLayer(marker);
     }
+    this.busStopMarkers = [];
     this.initializeBusStopMarkers();
   }
 
